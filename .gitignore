@@ -11,6 +11,9 @@
 # production
 /build
 
+#custom files
+/src/TODO.js
+
 # misc
 .DS_Store
 .env.local

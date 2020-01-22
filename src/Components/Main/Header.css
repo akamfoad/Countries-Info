@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--Dark-Blue);
+  color: var(--White);
+}
+
+.header-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header-darkMode-icon{
+  transform: rotate(-15deg);
+  font-weight: 100;
+}
+
+.header-title,
+.header-darkMode-button {
+  color: var(--dark-mode-text);
+  text-decoration: none;
+}
+
+.header-darkMode-button {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.header-darkMode-text {
+  padding-left: 5px;
+}
