@@ -2,6 +2,7 @@
   background-color: transparent;
   color: var(--White);
   position: relative;
+  cursor: pointer;
 }
 
 .rf-select-input{
@@ -10,10 +11,15 @@
   background-color: var(--Dark-Blue);
   padding: 10px 20px;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .rf-selected-region{
   margin-right: 20px;
+}
+
+.rf-select-icon{
+  cursor: inherit;
 }
 
 .region-list{
@@ -34,6 +40,7 @@
 }
 
 .region-list .region-item{
+  cursor: pointer;
   margin: 10px 20px; 
 }
 

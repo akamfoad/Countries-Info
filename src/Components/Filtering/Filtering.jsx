@@ -6,7 +6,9 @@ import "./Filtering.css";
 export class Filtering extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      isFiltering: false
+    };
   }
 
   render() {

@@ -1,0 +1,18 @@
+.searching-container {
+  background-color: var(--Dark-Blue);
+  padding: 10px 20px;
+  color: var(--White);
+  border-radius: 5px;
+  display: flex;
+  align-items: inherit;
+}
+
+.searching-container > input {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin-left: 10px;
+  width: 25ch;
+}
