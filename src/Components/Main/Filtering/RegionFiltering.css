@@ -1,0 +1,45 @@
+.rf-container{
+  background-color: transparent;
+  color: var(--White);
+  position: relative;
+}
+
+.rf-select-input{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--Dark-Blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.rf-selected-region{
+  margin-right: 20px;
+}
+
+.region-list{
+  display: none;
+  }
+
+.region-list.open{
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Dark-Blue);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 100%;
+  list-style-type: none;
+}
+
+.region-list .region-item{
+  margin: 10px 20px; 
+}
+
+
+@media screen and (max-width: 568px){
+  .rf-container{
+   margin-top: 15px;
+  }
+}

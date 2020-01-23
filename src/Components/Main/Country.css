@@ -6,20 +6,22 @@
 }
 
 .country-container {
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  overflow: hidden;
+  justify-content: space-between;
   background-color: var(--dark-mode-elements);
   padding: 0;
-  margin: 1rem;
+  margin: 0 0 3rem 0;
   width: 250px;
+  height: 20rem;
   color: hsl(0, 0%, 100%);
 }
 
 .country-container > img {
-  width: 100%;
+  width: inherit;
   margin: 0;
   padding: 0;
 }

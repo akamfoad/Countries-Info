@@ -3,12 +3,14 @@
 }
 
 .header-container {
+  z-index: 50;
   position: sticky;
   left: 0;
   top: 0;
   width: 100%;
   display: flex;
-  padding: 20px 50px;
+  flex-wrap: wrap;
+  padding: 20px 5rem;
   justify-content: space-between;
   align-items: flex-start;
   background-color: var(--Dark-Blue);
@@ -20,22 +22,21 @@
   font-weight: 600;
 }
 
-.header-darkMode-icon{
+.header-darkMode-icon {
   transform: rotate(-15deg);
-  font-weight: 100;
+  font-weight: 200;
+  margin-right: 5px;
 }
 
-.header-title,
-.header-darkMode-button {
+.header-title {
   color: var(--dark-mode-text);
   text-decoration: none;
 }
 
 .header-darkMode-button {
+  background: none;
+  border: none;
   font-size: 12px;
   font-weight: 300;
-}
-
-.header-darkMode-text {
-  padding-left: 5px;
+  color: var(--dark-mode-text);
 }

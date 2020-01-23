@@ -1,0 +1,15 @@
+.filtering-container {
+  padding: 30px 5rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 568px) {
+  .filtering-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

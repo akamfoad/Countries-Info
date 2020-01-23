@@ -1,12 +1,13 @@
-@import url("https://fonts.google.com/specimen/Nunito+Sans");
+/* @import url("https://fonts.google.com/specimen/Nunito+Sans"); */
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   width: 100vw;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
+  min-width: 375px;
+  max-width: 1440px;
 }
 
 :root {
@@ -22,5 +23,5 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+ 
 }
