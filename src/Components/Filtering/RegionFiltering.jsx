@@ -4,27 +4,6 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons/";
 import "./RegionFiltering.css";
 
 export class RegionFiltering extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isfilteringByReg: false,
-      selectedRegion: "none"
-    };
-  }
-
-  regionSelectionHandler = e => {
-    const selectedRegion = e.target.innerText;
-    if (selectedRegion.toLowerCase() === "none") {
-      //if search term is empty
-      this.setState({ isfilteringByReg: false, selectedRegion: "none" });
-    } else {
-      this.setState({
-        isfilteringByReg: true,
-        selectedRegion: selectedRegion
-      });
-    }
-  };
-
   toggleSelectionHandler = e => {
     document.querySelector(".region-list").classList.toggle("open");
     e.stopPropagation();
@@ -36,9 +15,9 @@ export class RegionFiltering extends Component {
         <div className="rf-select-input">
           <div className="rf-selected-region">
             Filter By{" "}
-            {this.state.selectedRegion.toLowerCase() === "none"
+            {this.props.selectedRegion.toLowerCase() === "none"
               ? "Region"
-              : this.state.selectedRegion}
+              : this.props.selectedRegion}
           </div>
           <FontAwesomeIcon className="rf-select-icon" icon={faAngleDown} />
         </div>
@@ -48,7 +27,7 @@ export class RegionFiltering extends Component {
               <li
                 key={reg}
                 className="region-item"
-                onClick={this.regionSelectionHandler}
+                onClick={this.props.regionSelectionHandler}
               >
                 {reg}
               </li>

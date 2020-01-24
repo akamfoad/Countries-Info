@@ -3,7 +3,7 @@
 }
 
 .header-container {
-  z-index: 50;
+  z-index: 5;
   position: sticky;
   left: 0;
   top: 0;

@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 659px){
   .countries-container{
     flex-direction: column;
     align-items: center;
