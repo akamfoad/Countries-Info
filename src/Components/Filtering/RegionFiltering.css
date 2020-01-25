@@ -1,52 +1,67 @@
-.rf-container{
+.rf-container {
   background-color: transparent;
-  color: var(--White);
+  color: var(--DMText-LMElement);
   position: relative;
   cursor: pointer;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.rf-select-input{
+.rf-container.light-mode {
+  color: var(--Light-Mode-Text);
+}
+
+.rf-select-input {
   display: flex;
   justify-content: space-between;
-  background-color: var(--Dark-Blue);
+  background-color: var(--Dark-Mode-Elements);
   padding: 10px 20px;
   border-radius: 5px;
   cursor: inherit;
+  
+
 }
 
-.rf-selected-region{
+.rf-select-input.light-mode {
+  background-color: var(--DMText-LMElement);
+}
+
+.rf-selected-region {
   margin-right: 20px;
 }
 
-.rf-select-icon{
+.rf-select-icon {
   cursor: inherit;
 }
 
-.region-list{
+.region-list {
   display: none;
-  }
+}
 
-.region-list.open{
+.region-list.open {
   display: block;
   margin: 0;
   padding: 0;
-  background-color: var(--Dark-Blue);
+  background-color: var(--Dark-Mode-Elements);
   border-radius: 5px;
   position: absolute;
   left: 0;
   top: 110%;
   width: 100%;
   list-style-type: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.region-list .region-item{
+.region-list.light-mode {
+  background-color: var(--Light-Mode-Background);
+}
+
+.region-list .region-item {
   cursor: pointer;
-  margin: 10px 20px; 
+  margin: 10px 20px;
 }
 
-
-@media screen and (max-width: 598px){
-  .rf-container{
-   margin-top: 15px;
+@media screen and (max-width: 614px) {
+  .rf-container {
+    margin-top: 15px;
   }
 }

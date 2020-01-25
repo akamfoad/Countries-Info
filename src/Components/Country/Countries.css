@@ -6,6 +6,14 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-color: var(--Dark-Mode-Background);
+}
+
+.countries-container.light-mode{
+  background-color: var(--Light-Mode-Background);
+}
+.countries-container.hide{
+  display: none;
 }
 
 @media screen and (max-width: 659px){

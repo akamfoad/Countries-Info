@@ -23,17 +23,23 @@ export class Countries extends Component {
     }
 
     return (
-      <div className="countries-container">
+      <div
+        className={`countries-container${
+          this.props.darkMode ? "" : " light-mode"
+        }`}
+      >
         {COUNTRIES
           ? COUNTRIES.map(country => {
               return (
                 <Country
                   key={country.alpha3Code}
+                  alpha3Code={country.alpha3Code}
                   flag={country.flag}
                   name={country.name}
                   population={country.population}
                   region={country.region}
                   capital={country.capital}
+                  {...this.props}
                 />
               );
             })

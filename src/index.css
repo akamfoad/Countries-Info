@@ -1,5 +1,7 @@
 /* @import url("https://fonts.google.com/specimen/Nunito+Sans"); */
-
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -8,20 +10,21 @@ body {
   font-size: 14px;
   min-width: 375px;
   max-width: 1440px;
+  height: 100vh;
 }
-
+ 
 :root {
-  --Dark-Blue/*(Dark Mode Elements)*/ : hsl(209, 23%, 22%);
-  --Very-Dark-Blue/*(Dark Mode Background)*/: hsl(207, 26%, 17%);
-  --Very-Dark-Blue/*(Light Mode Text)*/: hsl(200, 15%, 8%);
-  --Dark-Gray/*(Light Mode Input)*/: hsl(0, 0%, 52%);
-  --Very-Light-Gray/*(Light Mode Background)*/: hsl(0, 0%, 98%);
-  --White/*(Dark Mode Text & Light Mode Elements)*/: hsl(0, 0%, 100%);
+  --Dark-Mode-Elements/*(Dark Mode Elements)*/ : hsl(209, 23%, 22%);
+  --Dark-Mode-Background/*(Dark Mode Background)*/: hsl(207, 26%, 17%);
+  --Light-Mode-Text/*(Light Mode Text)*/: hsl(200, 15%, 8%);
+  --Light-Mode-Input/*(Light Mode Input)*/: hsl(0, 0%, 52%);
+  --Light-Mode-Background/*(Light Mode Background)*/: hsl(0, 0%, 98%);
+  --DMText-LMElement/*(Dark Mode Text & Light Mode Elements)*/: hsl(0, 0%, 100%);
 }
 
 #root {
   margin: 0;
   padding: 0;
   width: 100vw;
- 
+  height: 100vh;
 }

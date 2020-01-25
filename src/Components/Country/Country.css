@@ -1,23 +1,23 @@
-* {
-  box-sizing: border-box;
-}
-:root {
-  --dark-mode-elements: hsl(209, 23%, 22%);
-}
-
 .country-container {
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
-  background-color: var(--dark-mode-elements);
+  background-color: var(--Dark-Mode-Elements);
   padding: 0;
   margin: 0 0 3rem 0;
   width: 250px;
-  height: 20rem;
-  color: hsl(0, 0%, 100%);
+  height: 20rem, max-content;
+  color: var(--DMText-LMElement);
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.country-container.light-mode {
+  background-color: var(--Light-Mode-Background);
+  color: var(--Light-Mode-Text);
 }
 
 .country-container > img {
@@ -26,13 +26,19 @@
   padding: 0;
 }
 
-.country-info h4 {
-  margin: 15px 0;
-}
 .country-info {
   width: 100%;
   padding: 10px 20px 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 300;
+}
+.country-info h4 {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 800;
+  margin: 15px 0;
 }

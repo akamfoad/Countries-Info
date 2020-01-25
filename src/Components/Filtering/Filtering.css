@@ -5,11 +5,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--Dark-Mode-Background);
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bolder;
 }
 
-@media screen and (max-width: 598px) {
+.filtering-container.light-mode {
+  background-color: var(--Light-Mode-Background);
+}
+
+.filtering-container.hide {
+  display: none;
+}
+
+@media screen and (max-width: 614px) {
   .filtering-container {
     flex-direction: column;
     align-items: center;
   }
 }
+

@@ -3,9 +3,37 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--dark-mode-background);
+  background-color: var(--Dark-Mode-Background);
   width: 100vw;
   min-height: 100%;
   margin: 0;
   padding: 0;
+}
+.Home.light-mode {
+  background-color: var(--Light-Mode-Background);
+}
+
+@media screen and (max-width: 435px) {
+  .Home {
+    width: 100%;
+    align-items: flex-start;
+    
+  }
+
+  .countries-container {
+    align-items: center;
+    padding: 0 0.2rem;
+  }
+}
+
+
+@media screen and (max-width: 355px) {
+  .header-container{
+    padding: 20px 1rem;
+    align-items: flex-start;
+  }
+  .filtering-container{
+    padding: 30px 1rem;
+    align-items: flex-start;
+  }
 }

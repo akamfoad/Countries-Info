@@ -6,7 +6,11 @@ import "./Searching.css";
 export class Searching extends Component {
   render() {
     return (
-      <div className="searching-container">
+      <div
+        className={`searching-container${
+          this.props.darkMode ? "" : " light-mode"
+        }`}
+      >
         <FontAwesomeIcon size="lg" className="sc-icon" icon={faSearch} />
         <input
           type="text"

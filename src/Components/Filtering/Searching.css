@@ -1,10 +1,16 @@
 .searching-container {
-  background-color: var(--Dark-Blue);
+  background-color: var(--Dark-Mode-Elements);
   padding: 10px 20px;
-  color: var(--White);
+  color: var(--DMText-LMElement);
   border-radius: 5px;
   display: flex;
   align-items: inherit;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.searching-container.light-mode {
+  background-color: var(--Light-Mode-Background);
+  color: var(--Light-Mode-Text);
 }
 
 .searching-container > input {
@@ -15,4 +21,12 @@
   font-size: inherit;
   margin-left: 10px;
   width: 25ch;
+}
+
+.searching-container > input::placeholder {
+  color: var(--DMText-LMElement);
+}
+
+.searching-container.light-mode > input::placeholder {
+  color: var(--Light-Mode-Input);
 }
