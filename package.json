@@ -2,6 +2,10 @@
   "name": "countries-info",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Akam Foad",
+    "url": "https://github.com/akamfoad"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
@@ -33,5 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Responsive Countries info website challenge from https://www.frontendmentor.io with ReactJS and vanilla CSS3",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
 }
