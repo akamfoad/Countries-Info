@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0 0 3rem 0;
   width: 250px;
-  height: 20rem, max-content;
+  height: 20rem;
   color: var(--DMText-LMElement);
   cursor: pointer;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
