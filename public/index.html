@@ -2,7 +2,15 @@
 <html lang="en">
 
   <head>
-
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "afda1968-9a49-49fc-b90e-7347a0879a03",
+    });
+  });
+</script>
     <style>
       body {
         min-height: 100vh;
